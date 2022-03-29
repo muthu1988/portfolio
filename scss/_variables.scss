@@ -1,0 +1,14 @@
+$website-width: 1280px;
+$primary-color: #053742;
+$secondry-color: #39A2DB;
+$dark-color: #A2DBFA;
+$light-color: #E8F0F2;
+$bg-image: url('../../img/bg-workspace1.jpg');
+
+@function setTextColor($color) {
+    @if(lightness($color) > 50) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
